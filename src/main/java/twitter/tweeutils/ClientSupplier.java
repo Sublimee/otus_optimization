@@ -11,10 +11,10 @@ import java.util.concurrent.BlockingQueue;
 
 public class ClientSupplier {
     public static BasicClient prepareAndConnectDefaultClient(String consumerKey,
-                                                   String  consumerSecret,
-                                                   String  token,
-                                                   String  secret,
-                                                   BlockingQueue<String> queue){
+                                                             String consumerSecret,
+                                                             String token,
+                                                             String secret,
+                                                             BlockingQueue<String> queue) {
         StatusesSampleEndpoint endpoint = new StatusesSampleEndpoint();
         endpoint.stallWarnings(false);
 
